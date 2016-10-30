@@ -12,5 +12,9 @@
 */
 
 $app->get('/', function () use ($app) {
-    return $app->version();
+  return array
+    (
+      "api" => "Descubra Manaus",
+      "version" => "0.0.1"
+    );
 });

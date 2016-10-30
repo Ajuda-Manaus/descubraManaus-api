@@ -9,12 +9,22 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
-    {
-        $this->get('/');
 
-        $this->assertEquals(
-            $this->app->version(), $this->response->getContent()
+    public function testApi(){
+      
+      $this->get('/');
+      $this->assertJsonStringEqualsJsonString
+        (
+          json_encode
+          (
+            array
+            (
+              "api"=>"Descubra Manaus",
+              "version"=>"0.0.1"
+            )),
+          $this->response->getContent()
         );
+
     }
+
 }
