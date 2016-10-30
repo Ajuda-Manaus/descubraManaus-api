@@ -1,4 +1,8 @@
 # descubraManaus-api
+
+<a href="#" id="status-image-popup" name="status-images" class="open-popup" title="Latest push build on default branch: passed" data-ember-action="1097">
+            <img src="https://travis-ci.org/Ajuda-Manaus/descubraManaus-api.svg?branch=master" alt="build:passed">
+                      </a>
 Back-end descubra manaus
 
 
